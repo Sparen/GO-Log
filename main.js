@@ -40,7 +40,7 @@ function setup(filepath) {
     client.send();
 }
 
-function drawBaseImage() {
+function drawBaseImage(optionalcallback, optionalcallback2) {
     var canvas = document.getElementById('myCanvas');
     paper.setup(canvas);
     var ctx = canvas.getContext('2d');
@@ -48,6 +48,12 @@ function drawBaseImage() {
     baseimg.src = "Master.png";
     baseimg.onload = function() {
         ctx.drawImage(baseimg, 0, 0, 960, 720);
+        if (typeof optionalcallback === "function") {
+            optionalcallback();
+        }
+        if (typeof optionalcallback2 === "function") {
+            optionalcallback2();
+        }
     };
 }
 
@@ -115,18 +121,11 @@ function drawPokestop(location) {
 function drawGym(location) {
     var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
-    ctx.beginPath();
-    ctx.arc(location[0], location[1], 2, 0, Math.PI*2); //center point
-    ctx.strokeStyle = "#0000FF";
-    ctx.lineWidth = "2";
-    ctx.stroke();
-    ctx.fillStyle = "#0000FF";
-    ctx.fill();
-    ctx.fillStyle = "#FFFF00";
-    ctx.font = "5px Andale Mono";
-    ctx.textBaseline = "middle"; 
-    ctx.textAlign = "center"; 
-    ctx.fillText("G", location[0], location[1]);
+    var baseimg = new Image();
+    baseimg.src = 'img/_gym.png';
+    baseimg.onload = function() {
+        ctx.drawImage(baseimg, location[0] - 10, location[1] - 10, 20, 20);
+    };
 }
 
 function contains(a, obj) {
@@ -212,8 +211,6 @@ function setupAllLocation_helper(i, completion, alldatabases) {
                     setupAllLocation_helper(i + 1, completion, alldatabases);
                 } else {
                     setupAllLocation_Table(alldatabases);
-                    setupAllLocation_Pokestops();
-                    setupAllLocation_Gyms();
                 }
             }
         }
@@ -263,6 +260,12 @@ function setupAllLocation_Table(alldatabases) {
         drawMarker(k, locations[k]);
     }
     document.getElementById("maindiv").innerHTML = outputstring;
+}
+
+/* For _pokestops.html */
+function setupAllPokestop() {
+    //prepare canvas, but make sure that its been loaded before rudely dumping shit onto it
+    drawBaseImage(setupAllLocation_Pokestops, setupAllLocation_Gyms); 
 }
 
 function setupAllLocation_Pokestops() {
