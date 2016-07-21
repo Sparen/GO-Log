@@ -7,6 +7,30 @@
         {
             "name": "Barton Hall",
             "location": [542, 440]
+        },
+        {
+            "name": "Daniel Coit Gilman Statue",
+            "location": [550, 456]
+        },
+        {
+            "name": "Latrobe Hall at Johns Hopkins",
+            "location": [542, 408]
+        },
+        {
+            "name": "Maryland Hall",
+            "location": [562, 408]
+        },
+        {
+            "name": "Merrick Barn",
+            "location": [600, 386]
+        },
+        {
+            "name": "Whitehead Hall",
+            "location": [590, 422]
+        },
+        {
+            "name": "Wyman Quadrangle",
+            "location": [560, 424]
         }
     ]
 }

@@ -87,17 +87,17 @@ function drawMarker(number, location) {
     var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
     ctx.beginPath();
-    ctx.arc(location[0], location[1], 6, 0, Math.PI*2); //center point
+    ctx.arc(location[0], location[1], 4, 0, Math.PI*2); //center point
     ctx.strokeStyle = "#FF0000";
     ctx.lineWidth = "2";
     ctx.stroke();
     ctx.fillStyle = "white";
     ctx.fill();
     ctx.fillStyle = "#00AAFF";
-    ctx.font = "8px Andale Mono";
+    ctx.font = "6px Andale Mono";
     ctx.textBaseline = "middle"; 
     ctx.textAlign = "center"; 
-    ctx.fillText("" + number, location[0], location[1] + 1);
+    ctx.fillText("" + number, location[0], location[1]);
 }
 
 function drawPokestop(location) {
