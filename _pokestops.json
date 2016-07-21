@@ -9,6 +9,10 @@
             "location": [542, 440]
         },
         {
+            "name": "Body Art Sculpture",
+            "location": [634, 400]
+        },
+        {
             "name": "Daniel Coit Gilman Statue",
             "location": [550, 456]
         },
@@ -23,6 +27,10 @@
         {
             "name": "Merrick Barn",
             "location": [600, 386]
+        },
+        {
+            "name": "Swirnow Theater",
+            "location": [616, 386]
         },
         {
             "name": "Whitehead Hall",

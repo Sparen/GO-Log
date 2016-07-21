@@ -112,6 +112,23 @@ function drawPokestop(location) {
     ctx.fill();
 }
 
+function drawGym(location) {
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.arc(location[0], location[1], 2, 0, Math.PI*2); //center point
+    ctx.strokeStyle = "#0000FF";
+    ctx.lineWidth = "2";
+    ctx.stroke();
+    ctx.fillStyle = "#0000FF";
+    ctx.fill();
+    ctx.fillStyle = "#FFFF00";
+    ctx.font = "5px Andale Mono";
+    ctx.textBaseline = "middle"; 
+    ctx.textAlign = "center"; 
+    ctx.fillText("G", location[0], location[1]);
+}
+
 function contains(a, obj) {
     var i = a.length;
     while (i--) {
@@ -268,5 +285,20 @@ function setupAllLocation_Pokestops() {
 }
 
 function setupAllLocation_Gyms() {
-    
+    var client = new XMLHttpRequest();
+    client.open("GET", "_gyms.json", true);
+    console.log("setupAllLocation_Pokestops: Sending XMLHttpRequest for _gyms.json");
+    client.onreadystatechange = function () { //callback
+        if (client.readyState === 4) {
+            if (client.status === 200 || client.status === 0) {
+                var json_obj = JSON.parse(client.responseText);
+                var i;
+                for (i = 0; i < json_obj.gyms.length; i++) {
+                    drawGym(json_obj.gyms[i].location);
+                }
+            }
+        }
+    };
+
+    client.send();
 }
