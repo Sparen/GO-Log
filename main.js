@@ -6,14 +6,22 @@ var filepaths = [
     "charmander.json",
     "doduo.json",
     "goldeen.json",
+    "koffing.json",
     "krabby.json",
     "meowth.json",
+    "paras.json",
     "pidgey.json",
     "pinsir.json",
     "poliwag.json",
+    "rattata.json",
+    "spearow.json",
     "squirtle.json",
+    "weedle.json",
     "zubat.json"
 ];
+
+//HD-ify the canvas
+paper.install(window);
 
 function setup(filepath) {
     drawBaseImage(); //prepare canvas
@@ -34,6 +42,7 @@ function setup(filepath) {
 
 function drawBaseImage() {
     var canvas = document.getElementById('myCanvas');
+    paper.setup(canvas);
     var ctx = canvas.getContext('2d');
     var baseimg = new Image();
     baseimg.src = "Master.png";
@@ -89,6 +98,18 @@ function drawMarker(number, location) {
     ctx.textBaseline = "middle"; 
     ctx.textAlign = "center"; 
     ctx.fillText("" + number, location[0], location[1] + 1);
+}
+
+function drawPokestop(location) {
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.arc(location[0], location[1], 2, 0, Math.PI*2); //center point
+    ctx.strokeStyle = "#00AAFF";
+    ctx.lineWidth = "2";
+    ctx.stroke();
+    ctx.fillStyle = "#00FFFF";
+    ctx.fill();
 }
 
 function contains(a, obj) {
@@ -173,7 +194,9 @@ function setupAllLocation_helper(i, completion, alldatabases) {
                 if (completion !== filepaths.length) {
                     setupAllLocation_helper(i + 1, completion, alldatabases);
                 } else {
-                    setupAllLocation_Table(alldatabases)
+                    setupAllLocation_Table(alldatabases);
+                    setupAllLocation_Pokestops();
+                    setupAllLocation_Gyms();
                 }
             }
         }
@@ -223,4 +246,27 @@ function setupAllLocation_Table(alldatabases) {
         drawMarker(k, locations[k]);
     }
     document.getElementById("maindiv").innerHTML = outputstring;
+}
+
+function setupAllLocation_Pokestops() {
+    var client = new XMLHttpRequest();
+    client.open("GET", "_pokestops.json", true);
+    console.log("setupAllLocation_Pokestops: Sending XMLHttpRequest for _pokestops.json");
+    client.onreadystatechange = function () { //callback
+        if (client.readyState === 4) {
+            if (client.status === 200 || client.status === 0) {
+                var json_obj = JSON.parse(client.responseText);
+                var i;
+                for (i = 0; i < json_obj.pokestops.length; i++) {
+                    drawPokestop(json_obj.pokestops[i].location);
+                }
+            }
+        }
+    };
+
+    client.send();
+}
+
+function setupAllLocation_Gyms() {
+    
 }

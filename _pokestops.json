@@ -1,0 +1,12 @@
+{
+    "pokestops": [
+        {
+            "name": "Ames Hall",
+            "location": [536, 376]
+        },
+        {
+            "name": "Barton Hall",
+            "location": [542, 440]
+        }
+    ]
+}

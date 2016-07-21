@@ -1,4 +1,10 @@
 {
     "encounters": [
+        {
+            "image": "007MS.png",
+            "date": "THU 2016 07 21",
+            "time": "1448",
+            "location": [494, 302]
+        }
     ]
 }
