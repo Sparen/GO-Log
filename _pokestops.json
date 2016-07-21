@@ -13,8 +13,16 @@
             "location": [634, 400]
         },
         {
+            "name": "Charles Commons",
+            "location": [662, 376]
+        },
+        {
             "name": "Daniel Coit Gilman Statue",
             "location": [550, 456]
+        },
+        {
+            "name": "F Ross Jones Center",
+            "location": [638, 416]
         },
         {
             "name": "Latrobe Hall at Johns Hopkins",
@@ -31,6 +39,10 @@
         {
             "name": "Swirnow Theater",
             "location": [616, 386]
+        },
+        {
+            "name": "The Charles",
+            "location": [662, 362]
         },
         {
             "name": "Whitehead Hall",
