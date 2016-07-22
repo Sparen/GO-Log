@@ -13,8 +13,16 @@
             "location": [634, 400]
         },
         {
+            "name": "Carma's Cafe",
+            "location": [702, 456]
+        },
+        {
             "name": "Charles Commons",
             "location": [662, 376]
+        },
+        {
+            "name": "Charles Village Pub",
+            "location": [724, 490]
         },
         {
             "name": "Daniel Coit Gilman Statue",
