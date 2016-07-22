@@ -5,12 +5,28 @@
             "location": [536, 376]
         },
         {
+            "name": "AMR II",
+            "location": [600, 204]
+        },
+        {
+            "name": "Babb Field at Stromberg Stadium",
+            "location": [598, 186]
+        },
+        {
             "name": "Barton Hall",
             "location": [542, 440]
         },
         {
+            "name": "Blue Jays LAX Crab",
+            "location": [546, 148]
+        },
+        {
             "name": "Body Art Sculpture",
             "location": [634, 400]
+        },
+        {
+            "name": "Brody Learning Commons",
+            "location": [580, 382]
         },
         {
             "name": "Carma's Cafe",
@@ -25,16 +41,76 @@
             "location": [724, 490]
         },
         {
+            "name": "Cordish Lacrosse Center",
+            "location": [558, 128]
+        },
+        {
             "name": "Daniel Coit Gilman Statue",
             "location": [550, 456]
+        },
+        {
+            "name": "Dedication to Herbert Better",
+            "location": [552, 166]
+        },
+        {
+            "name": "Devotion",
+            "location": [596, 358]
+        },
+        {
+            "name": "Dunning Park",
+            "location": [526, 232]
         },
         {
             "name": "F Ross Jones Center",
             "location": [638, 416]
         },
         {
+            "name": "Garland Hall",
+            "location": [494, 420]
+        },
+        {
+            "name": "Gazebo 2",
+            "location": [628, 266]
+        },
+        {
+            "name": "Gilman Archeological Exhibit",
+            "location": [506, 354]
+        },
+        {
+            "name": "Gilman Clock Tower",
+            "location": [512, 342]
+        },
+        {
+            "name": "Homewood",
+            "location": [638, 312]
+        },
+        {
+            "name": "Homewood House Museum",
+            "location": [610, 306]
+        },
+        {
+            "name": "Homewood Privy",
+            "location": [602, 266]
+        },
+        {
+            "name": "Horse Statue",
+            "location": [532, 218]
+        },
+        {
+            "name": "Kneeling Ram",
+            "location": [526, 198]
+        },
+        {
             "name": "Latrobe Hall at Johns Hopkins",
             "location": [542, 408]
+        },
+        {
+            "name": "Levering Hall",
+            "location": [502, 406]
+        },
+        {
+            "name": "Macaulay Hall",
+            "location": [522, 280]
         },
         {
             "name": "Maryland Hall",
@@ -45,16 +121,64 @@
             "location": [600, 386]
         },
         {
+            "name": "Red Ribbon",
+            "location": [630, 462]
+        },
+        {
+            "name": "Seek Together World at Peace",
+            "location": [666, 482]
+        },
+        {
+            "name": "Sidney Lanier Monument",
+            "location": [632, 222]
+        },
+        {
+            "name": "Sun Dial",
+            "location": [496, 290]
+        },
+        {
             "name": "Swirnow Theater",
             "location": [616, 386]
+        },
+        {
+            "name": "The Academy at Johns Hopkins",
+            "location": [470, 324]
         },
         {
             "name": "The Charles",
             "location": [662, 362]
         },
         {
+            "name": "The Chris Tree",
+            "location": [624, 362]
+        },
+        {
+            "name": "The Hut",
+            "location": [494, 342]
+        },
+        {
+            "name": "The Prophet",
+            "location": [628, 484]
+        },
+        {
+            "name": "The Runner",
+            "location": [536, 164]
+        },
+        {
+            "name": "Untitled Work",
+            "location": [636, 446]
+        },
+        {
             "name": "Whitehead Hall",
             "location": [590, 422]
+        },
+        {
+            "name": "Wyman Estate Gatehouse",
+            "location": [642, 476]
+        },
+        {
+            "name": "Wyman Park",
+            "location": [490, 358]
         },
         {
             "name": "Wyman Quadrangle",
