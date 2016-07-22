@@ -2,11 +2,13 @@
 
 var database_obj;
 var filepaths = [
+    "bellsprout.json",
     "bulbasaur.json",
     "charmander.json",
     "doduo.json",
     "ekans.json",
     "goldeen.json",
+    "jigglypuff.json",
     "koffing.json",
     "krabby.json",
     "meowth.json",

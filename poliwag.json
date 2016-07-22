@@ -2,9 +2,15 @@
     "encounters": [
         {
             "image": "060MS.png",
-            "date": "MON 2016 07 19",
+            "date": "TUE 2016 07 19",
             "time": "1920",
             "location": [590, 426]
+        },
+        {
+            "image": "060MS.png",
+            "date": "THU 2016 07 21",
+            "time": "2307",
+            "location": [666, 468]
         }
     ]
 }
