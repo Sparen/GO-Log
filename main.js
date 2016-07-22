@@ -19,6 +19,7 @@ var filepaths = [
     "rattata.json",
     "spearow.json",
     "squirtle.json",
+    "venonat.json",
     "weedle.json",
     "zubat.json"
 ];
