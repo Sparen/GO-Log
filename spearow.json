@@ -29,6 +29,12 @@
             "date": "FRI 2016 07 22",
             "time": "0027",
             "location": [642, 468]
+        },
+        {
+            "image": "021MS.png",
+            "date": "SAT 2016 07 23",
+            "time": "2350",
+            "location": [598, 394]
         }
     ]
 }
