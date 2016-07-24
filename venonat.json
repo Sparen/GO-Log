@@ -11,6 +11,12 @@
             "date": "FRI 2016 07 22",
             "time": "0015",
             "location": [605, 410]
+        },
+        {
+            "image": "048MS.png",
+            "date": "SAT 2016 07 23",
+            "time": "1608",
+            "location": [624, 402]
         }
     ]
 }
