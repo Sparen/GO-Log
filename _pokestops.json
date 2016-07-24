@@ -13,6 +13,10 @@
             "location": [598, 186]
         },
         {
+            "name": "Barnes & Noble Johns Hopkins University",
+            "location": [702, 378]
+        },
+        {
             "name": "Barton Hall",
             "location": [542, 440]
         },
@@ -35,6 +39,10 @@
         {
             "name": "Charles Commons",
             "location": [662, 376]
+        },
+        {
+            "name": "Charles Commons",
+            "location": [688, 380]
         },
         {
             "name": "Charles Village Pub",
@@ -133,6 +141,10 @@
             "location": [632, 222]
         },
         {
+            "name": "Steinwald House",
+            "location": [664, 416]
+        },
+        {
             "name": "Sun Dial",
             "location": [496, 290]
         },
@@ -167,6 +179,10 @@
         {
             "name": "Untitled Work",
             "location": [636, 446]
+        },
+        {
+            "name": "UniMini",
+            "location": [720, 404]
         },
         {
             "name": "Whitehead Hall",
