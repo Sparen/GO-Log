@@ -13,6 +13,10 @@
             "location": [598, 186]
         },
         {
+            "name": "Baltimore Museum of Art: Visitor Entrance",
+            "location": [594, 502]
+        },
+        {
             "name": "Barnes & Noble Johns Hopkins University",
             "location": [702, 378]
         },
@@ -49,6 +53,14 @@
             "location": [724, 490]
         },
         {
+            "name": "Chapin A. Harris Memorial Bust",
+            "location": [524, 560]
+        },
+        {
+            "name": "Clark Hall",
+            "location": [490, 450]
+        },
+        {
             "name": "Cordish Lacrosse Center",
             "location": [558, 128]
         },
@@ -71,6 +83,10 @@
         {
             "name": "F Ross Jones Center",
             "location": [638, 416]
+        },
+        {
+            "name": "Fruit Lady Statue",
+            "location": [610, 500]
         },
         {
             "name": "Garland Hall",
@@ -105,6 +121,10 @@
             "location": [532, 218]
         },
         {
+            "name": "JHU Founder's Wall",
+            "location": [512, 448]
+        },
+        {
             "name": "Kneeling Ram",
             "location": [526, 198]
         },
@@ -125,6 +145,10 @@
             "location": [562, 408]
         },
         {
+            "name": "Mason Hall",
+            "location": [510, 510]
+        },
+        {
             "name": "Merrick Barn",
             "location": [600, 386]
         },
@@ -133,12 +157,24 @@
             "location": [630, 462]
         },
         {
+            "name": "Robert G. Merrick Dedication Plaque",
+            "location": [532, 554]
+        },
+        {
             "name": "Seek Together World at Peace",
             "location": [666, 482]
         },
         {
+            "name": "Shriver Hall",
+            "location": [554, 480]
+        },
+        {
             "name": "Sidney Lanier Monument",
             "location": [632, 222]
+        },
+        {
+            "name": "Spring House or Dairy - c. 181",
+            "location": [560, 544]
         },
         {
             "name": "Steinwald House",
