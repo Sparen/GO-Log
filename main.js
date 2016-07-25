@@ -15,6 +15,7 @@ var filepaths = [
     "meowth.json",
     "nidoran.json",
     "paras.json",
+    "pichu.json",
     "pidgey.json",
     "pinsir.json",
     "poliwag.json",
