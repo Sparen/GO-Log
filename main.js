@@ -8,6 +8,7 @@ var filepaths = [
     "doduo.json",
     "ekans.json",
     "goldeen.json",
+    "horsea.json",
     "jigglypuff.json",
     "koffing.json",
     "krabby.json",
@@ -20,6 +21,7 @@ var filepaths = [
     "rattata.json",
     "spearow.json",
     "squirtle.json",
+    "tauros.json",
     "venonat.json",
     "weedle.json",
     "zubat.json"
