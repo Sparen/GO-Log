@@ -41,6 +41,10 @@
             "location": [702, 456]
         },
         {
+            "name": "Cathedral of the Incarnation",
+            "location": [680, 170]
+        },
+        {
             "name": "Charles Commons",
             "location": [662, 376]
         },
@@ -55,6 +59,10 @@
         {
             "name": "Chapin A. Harris Memorial Bust",
             "location": [524, 560]
+        },
+        {
+            "name": "Children's Place Memorial",
+            "location": [690, 178]
         },
         {
             "name": "Clark Hall",
@@ -79,6 +87,10 @@
         {
             "name": "Dunning Park",
             "location": [526, 232]
+        },
+        {
+            "name": "Edward Henry Bouton Gardens",
+            "location": [726, 156]
         },
         {
             "name": "F Ross Jones Center",
@@ -121,8 +133,20 @@
             "location": [532, 218]
         },
         {
+            "name": "In Honor of Gorge S. Benton Plaque",
+            "location": [566, 322]
+        },
+        {
+            "name": "Interfaith and Community Center at JHU",
+            "location": [654, 180]
+        },
+        {
             "name": "JHU Founder's Wall",
             "location": [512, 448]
+        },
+        {
+            "name": "Keyser Quadrangle",
+            "location": [548, 340]
         },
         {
             "name": "Kneeling Ram",
@@ -153,6 +177,10 @@
             "location": [600, 386]
         },
         {
+            "name": "Reclining Figure",
+            "location": [550, 286]
+        },
+        {
             "name": "Red Ribbon",
             "location": [630, 462]
         },
@@ -161,8 +189,16 @@
             "location": [532, 554]
         },
         {
+            "name": "Rogers House",
+            "location": [692, 232]
+        },
+        {
             "name": "Seek Together World at Peace",
             "location": [666, 482]
+        },
+        {
+            "name": "Seeley G. Mudd Hall",
+            "location": [544, 258]
         },
         {
             "name": "Shriver Hall",
@@ -201,6 +237,10 @@
             "location": [624, 362]
         },
         {
+            "name": "The Hopkins Inn",
+            "location": [700, 308]
+        },
+        {
             "name": "The Hut",
             "location": [494, 342]
         },
@@ -213,12 +253,20 @@
             "location": [536, 164]
         },
         {
+            "name": "The Sheridan Library",
+            "location": [572, 332]
+        },
+        {
             "name": "Untitled Work",
             "location": [636, 446]
         },
         {
             "name": "UniMini",
             "location": [720, 404]
+        },
+        {
+            "name": "University One",
+            "location": [684, 206]
         },
         {
             "name": "Whitehead Hall",
