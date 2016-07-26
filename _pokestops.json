@@ -145,6 +145,10 @@
             "location": [512, 448]
         },
         {
+            "name": "Joseph Beuys Tree Partnership",
+            "location": [588, 572]
+        },
+        {
             "name": "Keyser Quadrangle",
             "location": [548, 340]
         },
@@ -155,6 +159,10 @@
         {
             "name": "Latrobe Hall at Johns Hopkins",
             "location": [542, 408]
+        },
+        {
+            "name": "Lee & Jackson Monument",
+            "location": [568, 586]
         },
         {
             "name": "Levering Hall",
@@ -265,6 +273,10 @@
             "location": [720, 404]
         },
         {
+            "name": "Union Soldiers and Sailors Mon",
+            "location": [644, 610]
+        },
+        {
             "name": "University One",
             "location": [684, 206]
         },
@@ -279,6 +291,26 @@
         {
             "name": "Wyman Park",
             "location": [490, 358]
+        },
+        {
+            "name": "Wyman Park Building",
+            "location": [468, 540]
+        },
+        {
+            "name": "Wyman Park Dell",
+            "location": [650, 594]
+        },
+        {
+            "name": "Wyman Park Dell Information Sign",
+            "location": [582, 628]
+        },
+        {
+            "name": "Wyman Park Dell Little Free Library",
+            "location": [624, 592]
+        },
+        {
+            "name": "Wyman Park Dell Ping Pong Table",
+            "location": [632, 628]
         },
         {
             "name": "Wyman Quadrangle",
