@@ -6,6 +6,8 @@ var filepaths = [
     "bulbasaur.json",
     "charmander.json",
     "doduo.json",
+    "drowzee.json",
+    "eevee.json",
     "ekans.json",
     "goldeen.json",
     "horsea.json",
