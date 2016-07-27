@@ -9,10 +9,222 @@
     <script src="./main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+  <style>
+    #optiontable {
+        border: 1px solid #AAAAAA;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    .optionelement {
+        padding: 4px;
+        border: 1px solid #AAAAAA;
+        text-align: left;
+    }
+  </style>
   <body onload="setupAll()">
     <div class="container-fluid" style="text-align:center">
         <h1>Master List</h1>
         <canvas id="myCanvas" width="960" height="720"></canvas>
+        <br>
+        <input type="checkbox" value="Check All" onclick="checkAll(this.checked); refresh()"> Check All<br>
+        <table id="optiontable">
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="001MS.png" class="opeleinput" onclick="refresh()"> 001<img src="./img/001MS.png"></img>Bulbasaur</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="002MS.png" class="opeleinput" onclick="refresh()"> 002<img src="./img/002MS.png"></img>Ivysaur</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="003MS.png" class="opeleinput" onclick="refresh()"> 003<img src="./img/003MS.png"></img>Venusaur</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="004MS.png" class="opeleinput" onclick="refresh()"> 004<img src="./img/004MS.png"></img>Charmander</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="005MS.png" class="opeleinput" onclick="refresh()"> 005<img src="./img/005MS.png"></img>Charmeleon</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="006MS.png" class="opeleinput" onclick="refresh()"> 006<img src="./img/006MS.png"></img>Charizard</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="007MS.png" class="opeleinput" onclick="refresh()"> 007<img src="./img/007MS.png"></img>Squirtle</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="008MS.png" class="opeleinput" onclick="refresh()"> 008<img src="./img/008MS.png"></img>Wartortle</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="009MS.png" class="opeleinput" onclick="refresh()"> 009<img src="./img/009MS.png"></img>Blastoise</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="010MS.png" class="opeleinput" onclick="refresh()"> 010<img src="./img/010MS.png"></img>Caterpie</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="011MS.png" class="opeleinput" onclick="refresh()"> 011<img src="./img/011MS.png"></img>Metapod</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="012MS.png" class="opeleinput" onclick="refresh()"> 012<img src="./img/012MS.png"></img>Butterfree</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="013MS.png" class="opeleinput" onclick="refresh()"> 013<img src="./img/013MS.png"></img>Weedle</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="014MS.png" class="opeleinput" onclick="refresh()"> 014<img src="./img/014MS.png"></img>Kakuna</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="015MS.png" class="opeleinput" onclick="refresh()"> 015<img src="./img/015MS.png"></img>Beedrill</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="016MS.png" class="opeleinput" onclick="refresh()"> 016<img src="./img/016MS.png"></img>Pidgey</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="017MS.png" class="opeleinput" onclick="refresh()"> 017<img src="./img/017MS.png"></img>Pidgeotto</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="018MS.png" class="opeleinput" onclick="refresh()"> 018<img src="./img/018MS.png"></img>Pidgeot</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="019MS.png" class="opeleinput" onclick="refresh()"> 019<img src="./img/019MS.png"></img>Rattata</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="020MS.png" class="opeleinput" onclick="refresh()"> 020<img src="./img/020MS.png"></img>Raticate</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="021MS.png" class="opeleinput" onclick="refresh()"> 021<img src="./img/021MS.png"></img>Spearow</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="022MS.png" class="opeleinput" onclick="refresh()"> 022<img src="./img/022MS.png"></img>Fearow</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="023MS.png" class="opeleinput" onclick="refresh()"> 023<img src="./img/023MS.png"></img>Ekans</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="024MS.png" class="opeleinput" onclick="refresh()"> 024<img src="./img/024MS.png"></img>Arbok</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="025MS.png" class="opeleinput" onclick="refresh()"> 025<img src="./img/025MS.png"></img>Pikachu</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="026MS.png" class="opeleinput" onclick="refresh()"> 026<img src="./img/026MS.png"></img>Raichu</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="027MS.png" class="opeleinput" onclick="refresh()"> 027<img src="./img/027MS.png"></img>Sandshrew</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="028MS.png" class="opeleinput" onclick="refresh()"> 028<img src="./img/028MS.png"></img>Sandslash</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="029MS.png" class="opeleinput" onclick="refresh()"> 029<img src="./img/029MS.png"></img>Nidoran (F)</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="030MS.png" class="opeleinput" onclick="refresh()"> 030<img src="./img/030MS.png"></img>Nidorina</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="031MS.png" class="opeleinput" onclick="refresh()"> 031<img src="./img/031MS.png"></img>Nidoqueen</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="032MS.png" class="opeleinput" onclick="refresh()"> 032<img src="./img/032MS.png"></img>Nidoran (M)</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="033MS.png" class="opeleinput" onclick="refresh()"> 033<img src="./img/033MS.png"></img>Nidorina</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="034MS.png" class="opeleinput" onclick="refresh()"> 034<img src="./img/034MS.png"></img>Nidoking</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="035MS.png" class="opeleinput" onclick="refresh()"> 035<img src="./img/035MS.png"></img>Clefairy</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="036MS.png" class="opeleinput" onclick="refresh()"> 036<img src="./img/036MS.png"></img>Clefable</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="037MS.png" class="opeleinput" onclick="refresh()"> 037<img src="./img/037MS.png"></img>Vulpix</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="038MS.png" class="opeleinput" onclick="refresh()"> 038<img src="./img/038MS.png"></img>Ninetales</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="039MS.png" class="opeleinput" onclick="refresh()"> 039<img src="./img/039MS.png"></img>Jigglypuff</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="040MS.png" class="opeleinput" onclick="refresh()"> 040<img src="./img/040MS.png"></img>Wigglytuff</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="041MS.png" class="opeleinput" onclick="refresh()"> 041<img src="./img/041MS.png"></img>Zubat</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="042MS.png" class="opeleinput" onclick="refresh()"> 042<img src="./img/042MS.png"></img>Golbat</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="043MS.png" class="opeleinput" onclick="refresh()"> 043<img src="./img/043MS.png"></img>Oddish</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="044MS.png" class="opeleinput" onclick="refresh()"> 044<img src="./img/044MS.png"></img>Gloom</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="045MS.png" class="opeleinput" onclick="refresh()"> 045<img src="./img/045MS.png"></img>Vileplume</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="046MS.png" class="opeleinput" onclick="refresh()"> 046<img src="./img/046MS.png"></img>Paras</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="047MS.png" class="opeleinput" onclick="refresh()"> 047<img src="./img/047MS.png"></img>Parasect</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="048MS.png" class="opeleinput" onclick="refresh()"> 048<img src="./img/048MS.png"></img>Venonat</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="049MS.png" class="opeleinput" onclick="refresh()"> 049<img src="./img/049MS.png"></img>Venomoth</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="050MS.png" class="opeleinput" onclick="refresh()"> 050<img src="./img/050MS.png"></img>Diglett</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="051MS.png" class="opeleinput" onclick="refresh()"> 051<img src="./img/051MS.png"></img>Dugtrio</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="052MS.png" class="opeleinput" onclick="refresh()"> 052<img src="./img/052MS.png"></img>Meowth</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="053MS.png" class="opeleinput" onclick="refresh()"> 053<img src="./img/053MS.png"></img>Persian</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="054MS.png" class="opeleinput" onclick="refresh()"> 054<img src="./img/054MS.png"></img>Psyduck</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="055MS.png" class="opeleinput" onclick="refresh()"> 055<img src="./img/055MS.png"></img>Golduck</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="056MS.png" class="opeleinput" onclick="refresh()"> 056<img src="./img/056MS.png"></img>Mankey</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="057MS.png" class="opeleinput" onclick="refresh()"> 057<img src="./img/057MS.png"></img>Primeape</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="058MS.png" class="opeleinput" onclick="refresh()"> 058<img src="./img/058MS.png"></img>Growlithe</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="059MS.png" class="opeleinput" onclick="refresh()"> 059<img src="./img/059MS.png"></img>Arcanine</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="060MS.png" class="opeleinput" onclick="refresh()"> 060<img src="./img/060MS.png"></img>Poliwag</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="061MS.png" class="opeleinput" onclick="refresh()"> 061<img src="./img/061MS.png"></img>Poliwhirl</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="062MS.png" class="opeleinput" onclick="refresh()"> 062<img src="./img/062MS.png"></img>Poliwrath</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="063MS.png" class="opeleinput" onclick="refresh()"> 063<img src="./img/063MS.png"></img>Abra</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="064MS.png" class="opeleinput" onclick="refresh()"> 064<img src="./img/064MS.png"></img>Kadabra</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="065MS.png" class="opeleinput" onclick="refresh()"> 065<img src="./img/065MS.png"></img>Alakazam</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="066MS.png" class="opeleinput" onclick="refresh()"> 066<img src="./img/066MS.png"></img>Machop</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="067MS.png" class="opeleinput" onclick="refresh()"> 067<img src="./img/067MS.png"></img>Machoke</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="068MS.png" class="opeleinput" onclick="refresh()"> 068<img src="./img/068MS.png"></img>Machamp</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="069MS.png" class="opeleinput" onclick="refresh()"> 069<img src="./img/069MS.png"></img>Bellsprout</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="070MS.png" class="opeleinput" onclick="refresh()"> 070<img src="./img/070MS.png"></img>Weepinbell</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="071MS.png" class="opeleinput" onclick="refresh()"> 071<img src="./img/071MS.png"></img>Victreebel</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="072MS.png" class="opeleinput" onclick="refresh()"> 072<img src="./img/072MS.png"></img>Tentacool</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="073MS.png" class="opeleinput" onclick="refresh()"> 073<img src="./img/073MS.png"></img>Tentacruel</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="074MS.png" class="opeleinput" onclick="refresh()"> 074<img src="./img/074MS.png"></img>Geodude</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="075MS.png" class="opeleinput" onclick="refresh()"> 075<img src="./img/075MS.png"></img>Graveler</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="076MS.png" class="opeleinput" onclick="refresh()"> 076<img src="./img/076MS.png"></img>Golem</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="077MS.png" class="opeleinput" onclick="refresh()"> 077<img src="./img/077MS.png"></img>Ponyta</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="078MS.png" class="opeleinput" onclick="refresh()"> 078<img src="./img/078MS.png"></img>Rapidash</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="079MS.png" class="opeleinput" onclick="refresh()"> 079<img src="./img/079MS.png"></img>Slowpoke</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="080MS.png" class="opeleinput" onclick="refresh()"> 080<img src="./img/080MS.png"></img>Slowbro</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="081MS.png" class="opeleinput" onclick="refresh()"> 081<img src="./img/081MS.png"></img>Magnemite</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="082MS.png" class="opeleinput" onclick="refresh()"> 082<img src="./img/082MS.png"></img>Magneton</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="083MS.png" class="opeleinput" onclick="refresh()"> 083<img src="./img/083MS.png"></img>Farfetch'd</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="084MS.png" class="opeleinput" onclick="refresh()"> 084<img src="./img/084MS.png"></img>Doduo</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="085MS.png" class="opeleinput" onclick="refresh()"> 085<img src="./img/085MS.png"></img>Dodrio</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="086MS.png" class="opeleinput" onclick="refresh()"> 086<img src="./img/086MS.png"></img>Seel</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="087MS.png" class="opeleinput" onclick="refresh()"> 087<img src="./img/087MS.png"></img>Dugong</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="088MS.png" class="opeleinput" onclick="refresh()"> 088<img src="./img/088MS.png"></img>Grimer</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="089MS.png" class="opeleinput" onclick="refresh()"> 089<img src="./img/089MS.png"></img>Muk</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="090MS.png" class="opeleinput" onclick="refresh()"> 090<img src="./img/090MS.png"></img>Shellder</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="091MS.png" class="opeleinput" onclick="refresh()"> 091<img src="./img/091MS.png"></img>Cloyster</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="092MS.png" class="opeleinput" onclick="refresh()"> 092<img src="./img/092MS.png"></img>Gastly</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="093MS.png" class="opeleinput" onclick="refresh()"> 093<img src="./img/093MS.png"></img>Haunter</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="094MS.png" class="opeleinput" onclick="refresh()"> 094<img src="./img/094MS.png"></img>Gengar</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="095MS.png" class="opeleinput" onclick="refresh()"> 095<img src="./img/095MS.png"></img>Onix</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="096MS.png" class="opeleinput" onclick="refresh()"> 096<img src="./img/096MS.png"></img>Drowzee</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="097MS.png" class="opeleinput" onclick="refresh()"> 097<img src="./img/097MS.png"></img>Hypno</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="098MS.png" class="opeleinput" onclick="refresh()"> 098<img src="./img/098MS.png"></img>Krabby</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="099MS.png" class="opeleinput" onclick="refresh()"> 099<img src="./img/099MS.png"></img>Kingler</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="100MS.png" class="opeleinput" onclick="refresh()"> 100<img src="./img/100MS.png"></img>Voltorb</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="101MS.png" class="opeleinput" onclick="refresh()"> 101<img src="./img/101MS.png"></img>Electrode</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="102MS.png" class="opeleinput" onclick="refresh()"> 102<img src="./img/102MS.png"></img>Exeggcute</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="103MS.png" class="opeleinput" onclick="refresh()"> 103<img src="./img/103MS.png"></img>Exeggutor</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="104MS.png" class="opeleinput" onclick="refresh()"> 104<img src="./img/104MS.png"></img>Cubone</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="105MS.png" class="opeleinput" onclick="refresh()"> 105<img src="./img/105MS.png"></img>Marowak</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="106MS.png" class="opeleinput" onclick="refresh()"> 106<img src="./img/106MS.png"></img>Hitmonlee</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="107MS.png" class="opeleinput" onclick="refresh()"> 107<img src="./img/107MS.png"></img>Hitmonchan</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="108MS.png" class="opeleinput" onclick="refresh()"> 108<img src="./img/108MS.png"></img>Lickitung</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="109MS.png" class="opeleinput" onclick="refresh()"> 109<img src="./img/109MS.png"></img>Koffing</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="110MS.png" class="opeleinput" onclick="refresh()"> 110<img src="./img/110MS.png"></img>Weezing</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="111MS.png" class="opeleinput" onclick="refresh()"> 111<img src="./img/111MS.png"></img>Rhyhorn</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="112MS.png" class="opeleinput" onclick="refresh()"> 112<img src="./img/112MS.png"></img>Rhydon</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="113MS.png" class="opeleinput" onclick="refresh()"> 113<img src="./img/113MS.png"></img>Chansey</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="114MS.png" class="opeleinput" onclick="refresh()"> 114<img src="./img/114MS.png"></img>Tangela</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="115MS.png" class="opeleinput" onclick="refresh()"> 115<img src="./img/115MS.png"></img>Kangaskhan</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="116MS.png" class="opeleinput" onclick="refresh()"> 116<img src="./img/116MS.png"></img>Horsea</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="117MS.png" class="opeleinput" onclick="refresh()"> 117<img src="./img/117MS.png"></img>Seadra</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="118MS.png" class="opeleinput" onclick="refresh()"> 118<img src="./img/118MS.png"></img>Goldeen</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="119MS.png" class="opeleinput" onclick="refresh()"> 119<img src="./img/119MS.png"></img>Seaking</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="120MS.png" class="opeleinput" onclick="refresh()"> 120<img src="./img/120MS.png"></img>Staryu</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="121MS.png" class="opeleinput" onclick="refresh()"> 121<img src="./img/121MS.png"></img>Starmie</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="122MS.png" class="opeleinput" onclick="refresh()"> 122<img src="./img/122MS.png"></img>Mr. Mime</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="123MS.png" class="opeleinput" onclick="refresh()"> 123<img src="./img/123MS.png"></img>Scyther</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="124MS.png" class="opeleinput" onclick="refresh()"> 124<img src="./img/124MS.png"></img>Jynx</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="125MS.png" class="opeleinput" onclick="refresh()"> 125<img src="./img/125MS.png"></img>Electabuzz</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="126MS.png" class="opeleinput" onclick="refresh()"> 126<img src="./img/126MS.png"></img>Magmar</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="127MS.png" class="opeleinput" onclick="refresh()"> 127<img src="./img/127MS.png"></img>Pinsir</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="128MS.png" class="opeleinput" onclick="refresh()"> 128<img src="./img/128MS.png"></img>Tauros</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="129MS.png" class="opeleinput" onclick="refresh()"> 129<img src="./img/129MS.png"></img>Magikarp</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="130MS.png" class="opeleinput" onclick="refresh()"> 130<img src="./img/130MS.png"></img>Gyarados</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="131MS.png" class="opeleinput" onclick="refresh()"> 131<img src="./img/131MS.png"></img>Lapras</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="132MS.png" class="opeleinput" onclick="refresh()"> 132<img src="./img/132MS.png"></img>Ditto</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="133MS.png" class="opeleinput" onclick="refresh()"> 133<img src="./img/133MS.png"></img>Eevee</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="134MS.png" class="opeleinput" onclick="refresh()"> 134<img src="./img/134MS.png"></img>Vaporeon</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="135MS.png" class="opeleinput" onclick="refresh()"> 135<img src="./img/135MS.png"></img>Jolteon</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="136MS.png" class="opeleinput" onclick="refresh()"> 136<img src="./img/136MS.png"></img>Flareon</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="137MS.png" class="opeleinput" onclick="refresh()"> 137<img src="./img/137MS.png"></img>Porygon</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="138MS.png" class="opeleinput" onclick="refresh()"> 138<img src="./img/138MS.png"></img>Omanyte</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="139MS.png" class="opeleinput" onclick="refresh()"> 139<img src="./img/139MS.png"></img>Omastar</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="140MS.png" class="opeleinput" onclick="refresh()"> 140<img src="./img/140MS.png"></img>Kabuto</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="141MS.png" class="opeleinput" onclick="refresh()"> 141<img src="./img/141MS.png"></img>Kabutops</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="142MS.png" class="opeleinput" onclick="refresh()"> 142<img src="./img/142MS.png"></img>Aerodactyl</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="143MS.png" class="opeleinput" onclick="refresh()"> 143<img src="./img/143MS.png"></img>Snorlax</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="147MS.png" class="opeleinput" onclick="refresh()"> 147<img src="./img/147MS.png"></img>Dratini</td>
+            </tr>
+            <tr>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="148MS.png" class="opeleinput" onclick="refresh()"> 148<img src="./img/148MS.png"></img>Dragonair</td>
+                <td class="optionelement"><input type="checkbox" name="pokemon" id="149MS.png" class="opeleinput" onclick="refresh()"> 149<img src="./img/149MS.png"></img>Dragonite</td>
+            </tr>
+        </table>
         <div id="maindiv" style="text-align:left"></div>
     </div>
   </body>
