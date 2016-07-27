@@ -14,6 +14,7 @@ var filepaths = [
     "jigglypuff.json",
     "koffing.json",
     "krabby.json",
+    "magikarp.json",
     "meowth.json",
     "nidoran.json",
     "paras.json",
