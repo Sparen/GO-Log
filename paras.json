@@ -9,6 +9,12 @@
         {
             "image": "046MS.png",
             "date": "SUN 2016 07 24",
+            "time": "2350",
+            "location": [668, 544]
+        },
+        {
+            "image": "046MS.png",
+            "date": "TUES 2016 07 26",
             "time": "2305",
             "location": [572, 450]
         }
