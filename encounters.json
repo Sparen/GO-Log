@@ -274,6 +274,20 @@
             "location": [640, 364]
         },
         {
+            "name": "pidgey",
+            "image": "016MS.png",
+            "date": "THU 2016 07 28",
+            "time": "1323",
+            "location": [606, 410]
+        },
+        {
+            "name": "pidgey",
+            "image": "016MS.png",
+            "date": "THU 2016 07 28",
+            "time": "1501",
+            "location": [624, 402]
+        },
+        {
             "name": "pidgeotto",
             "image": "017MS.png",
             "date": "THU 2016 07 21",
@@ -286,6 +300,13 @@
             "date": "TUE 2016 07 26",
             "time": "2106",
             "location": [562, 438]
+        },
+        {
+            "name": "pidgeot",
+            "image": "018MS.png",
+            "date": "THU 2016 07 28",
+            "time": "1459",
+            "location": [598, 394]
         },
         {
             "name": "rattata",
@@ -547,11 +568,39 @@
             "location": [590, 426]
         },
         {
+            "name": "rattata",
+            "image": "019MS.png",
+            "date": "THU 2016 07 28",
+            "time": "1502",
+            "location": [638, 408]
+        },
+        {
+            "name": "rattata",
+            "image": "019MS.png",
+            "date": "THU 2016 07 28",
+            "time": "1509",
+            "location": [642, 482]
+        },
+        {
             "name": "raticate",
             "image": "020MS.png",
             "date": "THU 2016 07 21",
             "time": "1558",
             "location": [560, 416]
+        },
+        {
+            "name": "raticate",
+            "image": "020MS.png",
+            "date": "THU 2016 07 28",
+            "time": "1320",
+            "location": [642, 434]
+        },
+        {
+            "name": "raticate",
+            "image": "020MS.png",
+            "date": "THU 2016 07 28",
+            "time": "1503",
+            "location": [636, 400]
         },
         {
             "name": "spearow",
@@ -867,6 +916,13 @@
             "date": "TUE 2016 07 26",
             "time": "1342",
             "location": [668, 544]
+        },
+        {
+            "name": "poliwag",
+            "image": "060MS.png",
+            "date": "THU 2016 07 28",
+            "time": "1319",
+            "location": [642, 482]
         },
         {
             "name": "poliwhirl",
