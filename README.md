@@ -7,7 +7,9 @@ I will update this with every encounter I find, regardless of the Pokémon, with
 ## Usage
 
 _pokestops.html: visual representation of Pokéstops and Gyms in the JHU area. Note that it is not complete.
+
 all_loc.html: visual representation of spawn locations, as well listings for each spawn location
+
 all.html: all Pokémon in database dumped onto one map, with toggleable Pokémon settings
 
 All times are Eastern Standard Time. All locations are based off of Master.png and are in pixels. I do not plan to map anything larger than the area provided here.
