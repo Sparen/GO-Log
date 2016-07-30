@@ -46,7 +46,7 @@ function parse() { //handles filters and Pokémon
         //If the checkbox does not exist yet, it renders. If the checkbox exists and is selected, it renders.
         if (document.getElementById(encounters[i].image) === null || document.getElementById(encounters[i].image).checked) {
             outputstring += '<tr>';
-            outputstring += '<td><img src="./img/' + encounters[i].image + '"></img></td>';
+            outputstring += '<td><img src="./img/' + encounters[i].image + '"></img> ' + database_obj.encounters[i].name + '</td>';
             outputstring += '<td>' + encounters[i].date + '</td>';
             outputstring += '<td>' + encounters[i].time + '</td>';
             outputstring += '<td>' + encounters[i].location + '</td>';
@@ -138,7 +138,7 @@ function setupAllLocation_Table() {
         for (j = 0; j < database_obj.encounters.length; j++) { //for every encounter
             if (locations[k][0] === database_obj.encounters[j].location[0] && locations[k][1] === database_obj.encounters[j].location[1]) {
                 outputstring += '<tr>';
-                outputstring += '<td><img src="./img/' + database_obj.encounters[j].image + '"></img></td>';
+                outputstring += '<td><img src="./img/' + database_obj.encounters[j].image + '"></img> ' + database_obj.encounters[j].name + '</td>';
                 outputstring += '<td>' + database_obj.encounters[j].date + '</td>';
                 outputstring += '<td>' + database_obj.encounters[j].time + '</td>';
                 outputstring += '</tr>';
