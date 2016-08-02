@@ -22,6 +22,13 @@
             "location": [494, 302]
         },
         {
+            "name": "squirtle",
+            "image": "007MS.png",
+            "date": "SAT 2016 07 30",
+            "time": "1406",
+            "location": [686, 334]
+        },
+        {
             "name": "weedle",
             "image": "013MS.png",
             "date": "THU 2016 07 21",
@@ -286,6 +293,13 @@
             "date": "THU 2016 07 28",
             "time": "1501",
             "location": [624, 402]
+        },
+        {
+            "name": "pidgey",
+            "image": "016MS.png",
+            "date": "SAT 2016 07 30",
+            "time": "1406",
+            "location": [660, 338]
         },
         {
             "name": "pidgeotto",
@@ -582,6 +596,13 @@
             "location": [642, 482]
         },
         {
+            "name": "rattata",
+            "image": "019MS.png",
+            "date": "SAT 2016 07 30",
+            "time": "1400",
+            "location": [686, 360]
+        },
+        {
             "name": "raticate",
             "image": "020MS.png",
             "date": "THU 2016 07 21",
@@ -806,6 +827,13 @@
             "location": [634, 440]
         },
         {
+            "name": "oddish",
+            "image": "043MS.png",
+            "date": "SAT 2016 07 30",
+            "time": "1406",
+            "location": [680, 334]
+        },
+        {
             "name": "paras",
             "image": "046MS.png",
             "date": "THU 2016 07 21",
@@ -822,9 +850,16 @@
         {
             "name": "paras",
             "image": "046MS.png",
-            "date": "TUES 2016 07 26",
+            "date": "TUE 2016 07 26",
             "time": "2305",
             "location": [572, 450]
+        },
+        {
+            "name": "paras",
+            "image": "046MS.png",
+            "date": "SAT 2016 07 30",
+            "time": "1357",
+            "location": [704, 454]
         },
         {
             "name": "venonat",
@@ -923,6 +958,13 @@
             "date": "THU 2016 07 28",
             "time": "1319",
             "location": [642, 482]
+        },
+        {
+            "name": "poliwag",
+            "image": "060MS.png",
+            "date": "SAT 2016 07 30",
+            "time": "1357",
+            "location": [760, 468]
         },
         {
             "name": "poliwhirl",
@@ -1065,6 +1107,13 @@
             "location": [644, 554]
         },
         {
+            "name": "staryu",
+            "image": "120MS.png",
+            "date": "SAT 2016 07 30",
+            "time": "1350",
+            "location": [434, 492]
+        },
+        {
             "name": "pinsir",
             "image": "127MS.png",
             "date": "WED 2016 07 20",
@@ -1098,6 +1147,13 @@
             "date": "TUE 2016 07 26",
             "time": "2145",
             "location": [644, 554]
+        },
+        {
+            "name": "tauros",
+            "image": "128MS.png",
+            "date": "SAT 2016 07 30",
+            "time": "1358",
+            "location": [702, 420]
         },
         {
             "name": "magikarp",
