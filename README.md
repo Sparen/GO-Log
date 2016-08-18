@@ -4,6 +4,8 @@ Hello viewers, and welcome to my log of Pokémon GO encounters in the vicinity o
 
 I will update this with every encounter I find, regardless of the Pokémon, with the goal of determining spawn locations, nests, and other potential goodies. 
 
+NOTE: No longer maintained as of August 18, 2016
+
 ## Usage
 
 _pokestops.html: visual representation of Pokéstops and Gyms in the JHU area. Note that it is not complete.
